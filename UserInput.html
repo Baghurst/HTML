@@ -7,17 +7,37 @@
 
 <body>
     <form id="userSubmission">
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname">
-        <br>
-        <!-- put in a surname -->
-        <!-- put in an age - type="number" -->
-        <label for="surname">Surname</label>
-        <input type="text" id="surname">
-        <br>
-        <label for="age">Age</label>
-        <input type="number" id="age">
-        <input type="submit">
+        <fieldset>
+            <legend>Some cars choice</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname">
+            <br>
+            <!-- put in a surname -->
+            <!-- put in an age - type="number" -->
+
+            <label for="surname">Surname</label>
+            <input type="text" id="surname">
+            <br>
+            <label for="age">Age</label>
+            <input type="number" id="age">
+            <br>
+            <label for="checkbox">CheckBox</label>
+            <input type="checkbox">
+            <label for="radio">Radio</label>
+            <input type="radio" name="test">
+            <label for="radio2">Radio2</label>
+            <input type="radio" name="test">
+            <br>
+            <label for="userChoice">Select your car</label>
+            <select id="userChoice">
+                <option>Select car</option>
+                <option>Ford</option>
+                <option>Volvo</option>
+            </select>
+            <input type="submit">
+        </fieldset>
+
+
     </form>
 
 </body>
