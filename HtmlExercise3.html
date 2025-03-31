@@ -88,6 +88,21 @@
         <input type="submit" value="Submit Card Details">
 
     </form>
+
+    <script>
+        let formID = document.getElementById("userSubmission")
+        formID.addEventListener('submit', userData)
+        function userData(event){
+            event.preventDefault()
+            let userName = document.getElementById("firstname")
+            console.log(userName.value)
+        }
+
+
+    </script>
+</body>
+
+</html>
 </body>
 
 </html>
