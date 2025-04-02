@@ -32,19 +32,19 @@
         <fieldset>
             <legend>Credit Card Type:</legend>
             <label for="visa"><img src="Visa.png" alt="Visa card" width="100"></label>
-            <input type="radio" id="visa" name="creditcard">
+            <input type="radio" id="visa" name="creditcard" value="Visa Card" checked="checked">
             <br>
             <br>
             <label for="visadebit"><img src="Visa_debit.png" alt="Visa debit card" width="100"></label>
-            <input type="radio" id="visadebit" name="creditcard">
+            <input type="radio" id="visadebit" name="creditcard" value="Visa Debit Card">
             <br>
             <br>
             <label for="mastercard"><img src="mastercard.png" alt="Master card" width="100"></label>
-            <input type="radio" id="mastercard" name="creditcard">
+            <input type="radio" id="mastercard" name="creditcard" value="Master Card">
             <br>
             <br>
             <label for="americanexpress"><img src="americanExpress.png" alt="American Express card" width="100"></label>
-            <input type="radio" id="americanexpress" name="creditcard">
+            <input type="radio" id="americanexpress" name="creditcard" value="American Express">
             <br>
             <br>
             <label for="creditcardnumber">Credit Card Number:</label>
@@ -82,7 +82,7 @@
         </fieldset>
         <br>
         <label for="comments">Further comments:</label>
-        <textarea name="comments" id="" cols="30" rows="5"></textarea>
+        <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
         <br>
         <br>
         <input type="submit" value="Submit Card Details">
@@ -106,8 +106,24 @@
             let userName3 = document.getElementById("dateofbirth")
             console.log(userName3.value)
 
-            let userName4 = document.getElementById("visa")
+
+            let userName4 = document.querySelector('input[name="creditcard"]:checked')
             console.log(userName4.value)
+
+            let userName5 = document.getElementById("creditcardnumber")
+            console.log(userName5.value)
+
+            let userName6 = document.getElementById("expiryyear")
+            console.log(userName6.value)
+
+            let userName7 = document.getElementById("expirymonth")
+            console.log(userName7.value)
+
+            let userName8 = document.getElementById("comments")
+            console.log(userName8.value)
+
+
+            
         }
 
 
